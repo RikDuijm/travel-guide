@@ -1,0 +1,148 @@
+/* ----------------------------------------------------------- Body General */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #484C4F;
+    margin: 20px 20px 10px 10px;
+}
+
+.container-fluid {
+    /* without this, bootstrap causes a horizontal scrollbar */
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.hoofdbeeld-links {
+    position: absolute;
+    left: 6;
+    width: 38vw;
+
+}
+
+.hoofdbeeld-rechts {
+    position: absolute;
+    left: 6vw;
+    width:38vw;
+ }
+
+
+.opnieuw {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    float: right;
+    maring-right: 50px;
+}
+
+h3 {
+    font-size: 1rem;
+    display: inline;
+}
+
+/* https://www.w3schools.com/css/css_align.asp How to center align elements
+
+https://mapstyle.withgoogle.com/
+
+ */
+
+/*--------------------------------------------Map*   @mediaquerry for desktop??? */
+
+
+.destination-headers {
+    display: block;
+    position: relative;
+    left: -40px;
+}
+
+.destination-image {
+    display: inline;
+    margin-right: 5px;
+}
+
+.destination-texts {
+    position: relative;
+    left: -20px;
+    color: #484C4F;
+}
+
+
+
+.markers-text {
+    display: none;
+}
+
+#lima-map {
+    width: 325px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+#arequipa-map {
+    width: 325px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+img {
+    display: block;
+    margin-left: auto;
+}
+
+img {
+    margin-right: auto;
+}
+
+.info {
+    margin-left: 50px;
+}
+
+li {
+    color: #337ab7;
+}
+
+li:click {
+    color: green;
+}
+
+/* ----------------------------------------------------------- Display of Text */
+
+#lima-intro {
+    display: none;
+}
+
+#lima-attracties-text {
+    display: none;
+}
+
+#arequipa-intro {
+    display: none;
+}
+
+#arequipa-attracties-text {
+    display: none;
+}
+
+#arequipa-hotels-text {
+    display: none;
+}
+
+/*-----------------------------------------------------------Dropdown*/
+
+.arequipa-attracties, .arequipa-hotels, .arequipa-restaurants, .arequipa-info, .markers-text {
+    display: none;
+}
+
+/*
+.selecteer {
+    display: inline;
+
+
+}*/

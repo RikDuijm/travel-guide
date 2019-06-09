@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plan uw verblijf</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> <!-- icons -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+</head>
+<body>
+
+<section class="container-fluid">
+    <article class="row no-gutters">
+        <div class="col-12">
+            <h1 id="plan">Plan uw verblijf</h1>
+            <p>Geniet alvast van tevoren en benut uw tijd optimaal met deze planner. Per bestemming treft u een overzicht en de locatie van de belangrijkste toeristische attracties en handige adressen. Daarnaast stellen wij u onze eigen selectie van hotels en restaurants aan u voor. Alle zijn door ons persoonlijk getest en aangeraden. Doe uw voordeel met deze tips!
+                <br /><br />
+                <strong>Verken:</strong>
+            </p>
+        </div>
+    </article>    
+    <div class="row">
+        <div class="col-5">
+            <h2 id="lima-nav" a href="#lima-intro" class="scroll_to">Lima</h2><img src ="assets/images/lima.jpg" alt="De wijk Miraflores in Lima" class="hoofdbeeld-links"> 
+        </div>
+        <div class="col-5">
+            <h2 id="arequipa-nav" a href="#arequipa-intro" class="scroll_to">Arequipa</h2><img src ="assets/images/arequipa.jpg" alt="De wijk Miraflores in Lima" class="hoofdbeeld-rechts">
+        </div>
+    </div>
+            
+            
+        </div>
+
+<br> <br> <br> <br> <br>
+    <article class="row no-gutters" id="lima-intro">
+        <div class="col-12">
+            <h2>Lima</h2>
+            <h3>Internationale toprestaurants!</h3>
+            <p>U vliegt vanuit Europa op Lima. Vanwege slechte aansluitingen van binnenlandse vluchten zult u zowel aan het begin als aan het eind van uw reis een nacht in Peru's hoofdstad verblijven. Geen straf, want hier vindt u enkele restaurants van wereldfaam!</p>
+
+            <p class="instructies">Klik op de iconen voor informatie. </p>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12 col-lg-4" id="lima-map">
+
+            </div>
+            <div class="col-12 col-lg-7 info">
+                <h4 id="lima-attracties-header">Toeristische attracties</h4>
+                <p id="lima-attracties-text">
+                    Tekst - tekst - tekst
+                </p>
+            </div>
+        </div>
+    </article>
+    <article class="row no-gutters" id="arequipa-intro">
+
+        <div class="col-12">
+            <h2>Arequipa</h2>
+            <h3>Acclimatiseren in een oase </h3><button class="opnieuw">Bekijk andere bestemming</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque rerum, quis. Dolorem iure nulla, ipsam quae. Similique culpa porro facilis voluptatum aspernatur repellat, illo, dolorem sunt inventore error incidunt.</p><br>
+
+            <strong>Zoek:</strong> <br><br>
+        </div>
+        <div class="row">
+        <div class="col arequipa-attracties-header"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="destination-image" alt="attracties">Attracties</div>
+        <div class="col arequipa-hotels-header"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="destination-image" alt="attracties">Hotels</div>
+        <div class="col arequipa-restaurants-header"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="destination-image" alt="attracties">Restaurants</div>
+        <div class="col arequipa-info-header"><img src="https://img.icons8.com/color/24/000000/information.png" class="destination-image" alt="attracties">Info</div>
+        </div>
+
+        <div class="row arequipa-attracties">
+            <h5> <img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="destination-image" alt="attracties"> Attracties</h5>
+            <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(0);">Monasterio de Santa Catalina</a></strong></div>
+                <div class="markers-text">tekst</div>
+
+            <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(1);">Museo de Juanita</a></strong></div>
+                <div class="markers-text">tekst</div>
+        </div>
+
+        <div class="row arequipa-hotels">
+                <h5> <img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="destination-image" alt="attracties"> Hotels</h5>
+            <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(2);">Hotel Casona Solar</a></strong></div>
+                <div class="markers-text">tekst</div>
+
+                <div class="markers"><strong>La Casa de mi Abuela</strong></div>
+                <div class="markers-text">Hello world 2</div>
+        </div>
+            <div class="arequipa-restaurants">Restaurants</div>
+            <div class="arequipa-info">Info</div>
+
+
+
+        <div class="row no-gutters">
+
+            <div class="col-lg-4" id="arequipa-map">
+
+
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-7 info">
+                <p>
+
+                    [<a href="#arequipa-map">naar map</a>] | [<a href="#plan">andere stad</a>]
+                </p>
+            </div>
+        </div>
+    </article>
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+
+
+
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+<script src="assets/js/maps.js"></script>
+</body>
+</html>
