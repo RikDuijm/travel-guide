@@ -4,7 +4,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #484C4F;
+    background-color: #FFFFFF;
+    color: #2a3105;
     margin: 20px 20px 10px 10px;
 }
 
@@ -15,32 +16,95 @@ body {
     padding-left: 10px;
 }
 
+h1 {
+    color: #00887A;
+}
+
+h3 {
+    font-size: 1.5rem;
+    display: inline;
+    color: #8FC1E3;
+}
+
+
+h2{
+    color: #8092f7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    background-color: #ebe9e5;
+    padding: 5px;
+}
+
+h4 {
+    color: #8092f7;
+    cursor: pointer;
+    font-size: 3vw;
+    text-align: center;
+}
+
+h4:hover {
+    color: #8FC1E3;
+}
+
+.chosen-header {
+    dispay: inline;
+    color: #00887A;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.chosen {
+    background-color: #D3E3F7;
+}
+
+a {
+    color: #8092f7;
+}
+
+a:hover {
+    color: #8FC1E3;
+}
+
+
 .hoofdbeeld-links {
-    position: absolute;
-    left: 6;
-    width: 38vw;
+    position: relative;
+    width: 100%;
 
 }
 
 .hoofdbeeld-rechts {
-    position: absolute;
-    left: 6vw;
-    width:38vw;
+    position: relative;
+    width: 100%;
  }
 
+.scroll-to, .choose {
+    cursor: pointer;
+}
 
-.opnieuw {
+.scroll-to:hover {
+    color: #8FC1E3;
+}
+
+
+
+
+.reset {
     position: absolute;
-    top: 2%;
-    left: 50%;
-    float: right;
-    maring-right: 50px;
+    right: 5px;
+    top: 6%;
+    color: #00887A;
+    font-weight: 600;
+    font-size: 0.86rem;
+    background-color: #D3E3F7;
+    border: none;
+    border-radius: 8px;
 }
 
-h3 {
-    font-size: 1rem;
-    display: inline;
+.opieuw:hover {
+    color: #8092f7;
 }
+
+
 
 /* https://www.w3schools.com/css/css_align.asp How to center align elements
 
@@ -57,17 +121,26 @@ https://mapstyle.withgoogle.com/
     left: -40px;
 }
 
-.destination-image {
-    display: inline;
-    margin-right: 5px;
+
+.choose-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.chosen-image {
+    display: inline;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+
+/*
 .destination-texts {
     position: relative;
     left: -20px;
     color: #484C4F;
 }
-
+*/
 
 
 .markers-text {

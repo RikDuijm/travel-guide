@@ -101,7 +101,11 @@ function initMap(){
     var information = "https://img.icons8.com/color/24/000000/information.png";
 
     var locationsArequipa = [
-        ['Monasterio', -16.395141, -71.536774, camera],['Juanita', -16.399810, -71.537825, camera], ['Casona Solar', -16.401777, -71.537058, hotel]
+        ['Monasterio de Santa Catalinta', -16.395141, -71.536774, camera],
+        ['Museo de Juanita', -16.399810, -71.537825, camera],
+        ['Casona Solar', -16.401777, -71.537058, hotel],
+        ['Zig Zag', -16.395345, -71.535461, restaurant],
+        ['Toeristische informatie', -16.399459, -71.537031, restaurant],
     ];
 
 
@@ -136,7 +140,6 @@ function initMap(){
 
 }
 
-google.maps.event.addDomListener(window, 'load', initMap);
 
 function clickArequipa(id){
     google.maps.event.trigger(markersArequipa[id], 'click');

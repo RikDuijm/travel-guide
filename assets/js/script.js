@@ -1,10 +1,13 @@
 $(document).ready(function() {
-    $(".opnieuw").click(function() {
+    $(".reset").click(function() {
         $("#lima-intro").hide();
         $("#arequipa-intro").hide();
         $("#puno-intro").hide();
         $("#cusco-intro").hide();
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     })
+
 
 
 /* ----------------------------------------------------------- Navigate Lima */
@@ -32,26 +35,26 @@ $(document).ready(function() {
         $("#cusco-intro").hide();
     });
 
-    $(".arequipa-attracties-header").click(function() {
+    $("#arequipa-attracties-header").click(function() {
         $(".arequipa-attracties").toggle();
         $(".arequipa-hotels").hide();
         $(".arequipa-restaurants").hide();
         $(".arequipa-info").hide()
     });
 
-    $(".arequipa-hotels-header").click(function() {
+    $("#arequipa-hotels-header").click(function() {
         $(".arequipa-attracties").hide();
         $(".arequipa-hotels").toggle();
         $(".arequipa-restaurants").hide();
         $(".arequipa-info").hide();
     });
-    $(".arequipa-restaurants-header").click(function() {
+    $("#arequipa-restaurants-header").click(function() {
         $(".arequipa-attracties").hide();
         $(".arequipa-hotels").hide();
         $(".arequipa-restaurants").toggle();
         $(".arequipa-info").hide();
     });
-    $(".arequipa-info-header").click(function() {
+    $("#arequipa-info-header").click(function() {
         $(".arequipa-attracties").hide();
         $(".arequipa-hotels").hide();
         $(".arequipa-restaurants").hide();
@@ -104,7 +107,7 @@ $(document).ready(function() {
     /* ----------------------------------------------------------- Scroll down */
 
     /* code used from https://www.daddydesign.com/wordpress/how-to-smoothly-scroll-to-a-specific-element-using-jquery/ */
-    $('.scroll_to').click(function(e) {
+    $('.scroll-to').click(function(e) {
         var jump = $(this).attr('href');
         var new_position = $(jump).offset();
         $('html, body').stop().animate({ scrollTop: new_position.top }, 500);
