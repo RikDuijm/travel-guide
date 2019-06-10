@@ -83,7 +83,7 @@ function initMap(){
         styles: generalStyles
     };
     var optionsArequipa = {
-        zoom: 12,
+        zoom: 16,
         center: {lat:-16.398803,lng:-71.536916},
         styles: generalStyles
     };
@@ -105,7 +105,7 @@ function initMap(){
         ['Museo de Juanita', -16.399810, -71.537825, camera],
         ['Casona Solar', -16.401777, -71.537058, hotel],
         ['Zig Zag', -16.395345, -71.535461, restaurant],
-        ['Toeristische informatie', -16.399459, -71.537031, restaurant],
+        ['Toeristische informatie', -16.399459, -71.537031, information],
     ];
 
 
@@ -134,9 +134,10 @@ function initMap(){
         markersArequipa.push(marker);
     }
 
+/*
     var markerCluster = new MarkerClusterer(mapArequipa, markersArequipa,
         {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-
+*/
 
 }
 
