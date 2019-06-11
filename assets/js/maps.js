@@ -1,5 +1,6 @@
 
 var markersArequipa = [];
+var markersLima = [];
 
 
 function initMap(){
@@ -105,34 +106,66 @@ function initMap(){
         ['Museo de Juanita', -16.399810, -71.537825, camera],
         ['Casona Solar', -16.401777, -71.537058, hotel],
         ['Zig Zag', -16.395345, -71.535461, restaurant],
-        ['Toeristische informatie', -16.399459, -71.537031, information],
+        ['Toeristische informatie', -16.399459, -71.537031, restaurant],
     ];
 
+    var locationsLima = [
+        ['Casa Wayra', -12.129707, -77.025206, hotel],
+        ['Hotel Mariel', -12.117951, -77.027370, hotel],
+        ['Aeropuerto Internacional Jorge Chávez', -12.024158, -77.111939, information]
+    ];
 
-    var marker, i;
-    var infowindow = new google.maps.InfoWindow();
+    var markerArequipa, iArequipa;
+    var infowindowArequipa = new google.maps.InfoWindow();
+    
+    var markerLima, iLima;
+    var infowindowLima = new google.maps.InfoWindow();
+    
 
     google.maps.event.addListener(mapArequipa, 'click', function() {
-        infowindow.close();
+        infowindowArequipa.close();
     });
 
+    google.maps.event.addListener(mapLima, 'click', function() {
+        infowindowLima.close();
+    });
+    
 
-    for (i = 0; i < locationsArequipa.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locationsArequipa[i][1], locationsArequipa[i][2]),
+    for (iArequipa = 0; iArequipa < locationsArequipa.length; iArequipa++) {
+        markerArequipa = new google.maps.Marker({
+            position: new google.maps.LatLng(locationsArequipa[iArequipa][1], locationsArequipa[iArequipa][2]),
             map: mapArequipa,
-            icon: locationsArequipa[i][3]
+            icon: locationsArequipa[iArequipa][3]
         });
 
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        google.maps.event.addListener(markerArequipa, 'click', (function(markerArequipa, iArequipa) {
             return function() {
-                infowindow.setContent(locationsArequipa[i][0]);
-                infowindow.open(mapArequipa, marker);
-            }
-        })(marker, i));
+                infowindowArequipa.setContent(locationsArequipa[iArequipa][0]);
+                infowindowArequipa.open(mapArequipa, markerArequipa);
+            };
+        })(markerArequipa, iArequipa));
 
-        markersArequipa.push(marker);
+        markersArequipa.push(markerArequipa);
     }
+
+
+    for (iLima = 0; iLima < locationsLima.length; iLima++) {
+        markerLima = new google.maps.Marker({
+            position: new google.maps.LatLng(locationsLima[iLima][1], locationsLima[iLima][2]),
+            map: mapLima,
+            icon: locationsLima[iLima][3]
+        });
+
+        google.maps.event.addListener(markerLima, 'click', (function(markerLima, iLima) {
+            return function() {
+                infowindowLima.setContent(locationsLima[iLima][0]);
+                infowindowLima.open(mapLima, markerLima);
+            };
+        })(markerLima, iLima));
+
+        markersLima.push(markerLima);
+    }
+
 
 /*
     var markerCluster = new MarkerClusterer(mapArequipa, markersArequipa,
