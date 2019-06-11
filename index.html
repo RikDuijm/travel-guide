@@ -41,26 +41,60 @@
 
 
 <br> <br> <br> <br> <br>
-    <article class="row no-gutters" id="lima-intro">
+
+
+        <article class="row no-gutters" id="lima-intro">
+
         <div class="col-12">
+            <button class="reset" a href="#plan">Verken andere stad</a></button>
             <h2>Lima</h2>
-            <h3>Internationale toprestaurants!</h3>
+            <h3>Restaurants van wereldfaam!</h3>
             <p>U vliegt vanuit Europa op Lima. Vanwege slechte aansluitingen van binnenlandse vluchten zult u zowel aan het begin als aan het eind van uw reis een nacht in Peru's hoofdstad verblijven. Geen straf, want hier vindt u enkele restaurants van wereldfaam!</p>
 
-            <p class="instructies">Klik op de iconen voor informatie. </p>
+            <strong>Zoek:</strong> <br>
         </div>
-        <div class="row no-gutters">
-            <div class="col-12 col-lg-4" id="lima-map">
 
-            </div>
-            <div class="col-12 col-lg-7 info">
-                <h4 id="lima-attracties-header">Toeristische attracties</h4>
-                <p id="lima-attracties-text">
-                    Tekst - tekst - tekst
-                </p>
-            </div>
+        <div class="row">
+        <div class="col choose" id="lima-attracties-header"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="choose-image" alt="attracties"><h4>Attracties</h4></div>
+        <div class="col choose" id="lima-hotels-header"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="choose-image" alt="hotels"><h4>Hotels</h4></div>
+        <div class="col choose" id="lima-restaurants-header"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="choose-image" alt="restaurants"><h4>Restaurants</h4></div>
+        <div class="col choose" id="lima-info-header"><img src="https://img.icons8.com/color/24/000000/information.png" class="choose-image" alt="praktische informatie"><h4>Informatie</h4></div>
         </div>
+
+        <div class="row">
+            <div class="col-md-6 lima-attracties">
+                 <div class="chosen"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span></div>
+                    <div class="markers"><strong><a href="#lima-map" onclick="clickLima();">Plaza de Armas</a></strong></div>
+                        <div class="markers-text">tekst</div>
+                    <div class="markers"><strong><a href="#lima-map" onclick="clickLima();">Larco Mar</a></strong></div>
+                        <div class="markers-text">tekst</div>
+            </div>     
+
+            <div class="col-md-6 lima-hotels">
+                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span></div>
+                     <div class="markers"><strong><a href="#lima-map" onclick="clickLima(0);">Casa Wayra</a></strong></div>
+                        <div class="markers-text">tekst</div>
+                    <div class="markers"><strong><a href="#lima-map" onclick="clickLima(1);">Hotel Mariel</a></strong></div>
+                        <div class="markers-text">tekst</div>    
+            </div>
+
+            <div class="col-md-6 lima-restaurants">
+                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span></div>
+            </div>
+
+            <div class="col-md-6 lima-info">
+                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span></div>
+                <div class="markers"><strong><a href="#lima-map" onclick="clickLima(2);">Aeropuerto Internacional Jorge Chavez</a></strong></div>
+                <div class="markers-text">tekst</div>
+            </div> 	
+
+
+            <div class="col-md-6" id="lima-map"></div>
+        </div>
+
     </article>
+    
+    
     <article class="row no-gutters" id="arequipa-intro">
 
         <div class="col-12">
@@ -81,16 +115,16 @@
 
         <div class="row">
             <div class="col-md-6 arequipa-attracties">
-                 <div class="chosen"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Hotels</span></div>
+                 <div class="chosen"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span></div>
                     <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(0);">Monasterio de Santa Catalina</a></strong></div>
                         <div class="markers-text">tekst</div>
 
                     <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(1);">Museo de Juanita</a></strong></div>
                         <div class="markers-text">tekst</div>
-                    </div>
+            </div>
 
             <div class="col-md-6 arequipa-hotels">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Attracties</span></div>
+                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span></div>
                      <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(2);">Hotel Casona Solar</a></strong></div>
                         <div class="markers-text">tekst</div>
 
@@ -110,7 +144,7 @@
 
             </div>
 
-            <div class="col-lg-6" id="arequipa-map"></div>
+            <div class="col-md-6" id="arequipa-map"></div>
         </div>
 
     </article>

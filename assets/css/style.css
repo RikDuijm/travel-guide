@@ -151,7 +151,7 @@ https://mapstyle.withgoogle.com/
     width: 325px;
     height: 500px;
     margin-right: auto;
-    margin-left: 25px;
+    margin-left: auto;
 }
 
 #arequipa-map {
@@ -209,7 +209,9 @@ li:click {
 
 /*-----------------------------------------------------------Dropdown*/
 
-.arequipa-attracties, .arequipa-hotels, .arequipa-restaurants, .arequipa-info, .markers-text {
+.arequipa-attracties, .arequipa-hotels, .arequipa-restaurants, .arequipa-info, 
+.lima-attracties, .lima-hotels, .lima-restaurants, .lima-info,
+.markers-text {
     display: none;
 }
 

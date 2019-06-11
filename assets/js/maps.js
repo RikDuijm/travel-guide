@@ -179,6 +179,9 @@ function clickArequipa(id){
     google.maps.event.trigger(markersArequipa[id], 'click');
 }
 
+function clickLima(id){
+    google.maps.event.trigger(markersLima[id], 'click');
+}
 
 
 

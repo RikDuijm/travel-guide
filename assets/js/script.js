@@ -9,7 +9,13 @@ $(document).ready(function() {
     })
 
 
-
+    $(function(){
+        $(".markers").on("click",function(){
+            $(this).next().toggle();
+        });
+    });
+    
+    
 /* ----------------------------------------------------------- Navigate Lima */
 
 
@@ -24,6 +30,33 @@ $(document).ready(function() {
     $("#lima-attracties-header").click(function() {
         $("#lima-attracties-text").toggle();
     });
+    
+        $("#lima-attracties-header").click(function() {
+        $(".lima-attracties").toggle();
+        $(".lima-hotels").hide();
+        $(".lima-restaurants").hide();
+        $(".lima-info").hide()
+    });
+
+    $("#lima-hotels-header").click(function() {
+        $(".lima-attracties").hide();
+        $(".lima-hotels").toggle();
+        $(".lima-restaurants").hide();
+        $(".lima-info").hide();
+    });
+    $("#lima-restaurants-header").click(function() {
+        $(".lima-attracties").hide();
+        $(".lima-hotels").hide();
+        $(".lima-restaurants").toggle();
+        $(".lima-info").hide();
+    });
+    $("#lima-info-header").click(function() {
+        $(".lima-attracties").hide();
+        $(".lima-hotels").hide();
+        $(".lima-restaurants").hide();
+        $(".lima-info").toggle();
+    });
+
 
 
     /* ----------------------------------------------------------- Navigate Arequipa */
@@ -61,11 +94,7 @@ $(document).ready(function() {
         $(".arequipa-info").toggle();
     });
 
-    $(function(){
-        $(".markers").on("click",function(){
-            $(this).next().toggle();
-        });
-    });
+
 /*
 
  $(".destination-headers").click(function() {
