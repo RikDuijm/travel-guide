@@ -3,6 +3,8 @@ var markersArequipa = [];
 var markersLima = [];
 
 
+
+
 function initMap(){
 
 
@@ -165,6 +167,39 @@ function initMap(){
 
         markersLima.push(markerLima);
     }
+    
+    //Geolocation. Because maps are centered with fixed coordinates, Geolocation doesn't bother clients who are not in the city they are looking at. 
+    //In that case the Geolocation Marker doesn't show on the map
+    $(function() {
+    navigator.geolocation.getCurrentPosition(success, error)
+   
+   function success(position){
+       
+       // Getting Latitude and Longitude
+       var lat = position.coords.latitude;
+       var long = position.coords.longitude;
+       
+       $("#lat").html(lat);
+       $("#long").html(long);
+    
+        var latlng = new google.maps.LatLng(lat,long); 
+        
+        var markerUserLima = new google.maps.Marker({
+            position:latlng,
+            map: mapLima,                               
+            title: "U bevindt zich hier"
+        });
+        
+            var markerUserArequipa = new google.maps.Marker({
+            position:latlng,
+            map: mapArequipa,                               
+            title: "U bevindt zich hier"    
+        });
+   }
+   function error() {
+       $('body').html("Locatie niet bepaald.");
+   }
+});
 
 
 /*
