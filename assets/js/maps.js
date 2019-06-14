@@ -1,9 +1,9 @@
 
 var markersArequipa = [];
 var markersLima = [];
+var markersCusco = []
 
-
-
+var routeCusco;
 
 function initMap(){
 
@@ -90,11 +90,18 @@ function initMap(){
         center: {lat:-16.398803,lng:-71.536916},
         styles: generalStyles
     };
+    var optionsCusco = {
+        zoom: 16,
+        center: {lat:-13.516706,lng:-71.978814},
+        styles: generalStyles
+    };
+    
 
 
 //place the map on HTML-page
     var mapLima = new google.maps.Map(document.getElementById("lima-map"), optionsLima);
     var mapArequipa = new google.maps.Map(document.getElementById("arequipa-map"), optionsArequipa);
+    var mapCusco = new google.maps.Map(document.getElementById("cusco-map"), optionsCusco);
 
 //create icons
     var camera = "https://img.icons8.com/color/24/000000/old-time-camera.png";
@@ -116,6 +123,11 @@ function initMap(){
         ['Hotel Mariel', -12.117951, -77.027370, hotel],
         ['Aeropuerto Internacional Jorge Chávez', -12.024158, -77.111939, information]
     ];
+    
+    var locationsCusco = [
+        ['Plaza de Armas', -13.516706, -71.978814, camera]
+    ];
+    
 
     var markerArequipa, iArequipa;
     var infowindowArequipa = new google.maps.InfoWindow();
@@ -123,6 +135,8 @@ function initMap(){
     var markerLima, iLima;
     var infowindowLima = new google.maps.InfoWindow();
     
+    var markerCusco, iCusco;
+    var infowindowCusco = new google.maps.InfoWindow();    
 
     google.maps.event.addListener(mapArequipa, 'click', function() {
         infowindowArequipa.close();
@@ -131,7 +145,10 @@ function initMap(){
     google.maps.event.addListener(mapLima, 'click', function() {
         infowindowLima.close();
     });
-    
+
+    google.maps.event.addListener(mapCusco, 'click', function() {
+        infowindowCusco.close();
+    });    
 
     for (iArequipa = 0; iArequipa < locationsArequipa.length; iArequipa++) {
         markerArequipa = new google.maps.Marker({
@@ -168,13 +185,88 @@ function initMap(){
         markersLima.push(markerLima);
     }
     
+    for (iCusco = 0; iCusco < locationsCusco.length; iCusco++) {
+        markerCusco = new google.maps.Marker({
+            position: new google.maps.LatLng(locationsCusco[iCusco][1], locationsCusco[iCusco][2]),
+            map: mapCusco,
+            icon: locationsCusco[iCusco][3]
+        });
+
+        google.maps.event.addListener(markerCusco, 'click', (function(markerCusco, iCusco) {
+            return function() {
+                infowindowCusco.setContent(locationsCusco[iCusco][0]);
+                infowindowCusco.open(mapCusco, markerCusco);
+            };
+        })(markerCusco, iCusco));
+
+        markersCusco.push(markerCusco);
+        
+ // Walking route Cusco
+    var routeCuscoCoordinates = [
+    {lat: -13.516277, lng: -71.978577},
+    {lat: -13.515703, lng: -71.978170},
+    {lat: -13.514519, lng: -71.978849},
+    {lat: -13.514414, lng: -71.978659},
+    {lat: -13.513016, lng: -71.979288},
+    {lat: -13.512704, lng: -71.978953},
+    {lat: -13.512512, lng: -71.978562},
+    {lat: -13.512448, lng: -71.978596},
+    {lat: -13.512045, lng: -71.977871},
+    {lat: -13.512119, lng: -71.977522},
+    {lat: -13.512337, lng: -71.977043},
+    {lat: -13.512694, lng: -71.976039},
+    {lat: -13.512907, lng: -71.975722},
+    {lat: -13.513644, lng: -71.974937},
+    {lat: -13.513705, lng: -71.974906},
+    {lat: -13.514311, lng: -71.974327},
+    {lat: -13.514447, lng: -71.974395},
+    {lat: -13.514643, lng: -71.974205},
+    {lat: -13.514863, lng: -71.974049},
+    {lat: -13.514240, lng: -71.974544},
+    {lat: -13.514992, lng: -71.974799},
+    {lat: -13.515347, lng: -71.975135},
+    {lat: -13.515697, lng: -71.975714},
+    {lat: -13.516135, lng: -71.976568},
+    {lat: -13.515433, lng: -71.976983},
+    {lat: -13.515512, lng: -71.977204},
+    {lat: -13.515271, lng: -71.977358},
+    {lat: -13.515506, lng: -71.977797},
+    {lat: -13.515703, lng: -71.978170},
+    {lat: -13.516277, lng: -71.978577}
+    ];
+
+  routeCusco = new google.maps.Polyline({
+    path: routeCuscoCoordinates,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
+
+  addLine();
+}
+
+function addLine() {
+  routeCusco.setMap(mapCusco);
+}
+
+ $(".removeLine").click(function(){
+        routeCusco.setMap(null);
+    })
+
+ $(".addLine").click(function(){
+        routeCusco.setMap(mapCusco);
+    })
+
+
+    
     //Geolocation. Because maps are centered with fixed coordinates, Geolocation doesn't bother clients who are not in the city they are looking at. 
     //In that case the Geolocation Marker doesn't show on the map
     
-    
-    
     $(".position").click(function() {
     navigator.geolocation.getCurrentPosition(success, error)
+
+
+   
 
    function success(position){
 
@@ -196,19 +288,30 @@ function initMap(){
             map: mapArequipa,                               
             title: "U bevindt zich hier"    
         });
+        
+            var markerUserCusco = new google.maps.Marker({
+            position:latlng,
+            map: mapCusco,                               
+            title: "U bevindt zich hier"    
+        });
    }
    function error() {
        $('body').html("Locatie niet bepaald.");
    }
 });
 
+}
 
 /*
     var markerCluster = new MarkerClusterer(mapArequipa, markersArequipa,
         {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 */
 
-}
+
+
+
+// Walking route Cusco
+
 
 
 function clickArequipa(id){
@@ -217,6 +320,10 @@ function clickArequipa(id){
 
 function clickLima(id){
     google.maps.event.trigger(markersLima[id], 'click');
+}
+
+function clickCusco(id){
+    google.maps.event.trigger(markersCusco[id], 'click');
 }
 
 

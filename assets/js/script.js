@@ -94,6 +94,41 @@ $(document).ready(function() {
         $(".arequipa-info").toggle();
     });
 
+    /* ----------------------------------------------------------- Navigate Arequipa */
+
+    $("#cusco-nav").click(function() {
+        $("#cusco-intro").show();
+        $("#lima-intro").hide();
+        $("#puno-intro").hide();
+        $("#arequipa-intro").hide();
+    });
+
+    $("#cusco-attracties-header").click(function() {
+        $(".cusco-attracties").toggle();
+        $(".cusco-hotels").hide();
+        $(".cusco-restaurants").hide();
+        $(".cusco-info").hide()
+    });
+
+    $("#cusco-hotels-header").click(function() {
+        $(".cusco-attracties").hide();
+        $(".cusco-hotels").toggle();
+        $(".cusco-restaurants").hide();
+        $(".cusco-info").hide();
+    });
+    $("#cusco-restaurants-header").click(function() {
+        $(".cusco-attracties").hide();
+        $(".cusco-hotels").hide();
+        $(".cusco-restaurants").toggle();
+        $(".cusco-info").hide();
+    });
+    $("#cusco-info-header").click(function() {
+        $(".cusco-attracties").hide();
+        $(".cusco-hotels").hide();
+        $(".cusco-restaurants").hide();
+        $(".cusco-info").toggle();
+    });
+    
 
 /*
 
