@@ -86,7 +86,16 @@ a:hover {
 }
 
 
-
+.position {
+    position: absolute;
+    left: 40%;
+    color: #00887A;
+    font-weight: 600;
+    font-size: 0.86rem;
+    background-color: #D3E3F7;
+    border: none;
+    border-radius: 8px;
+}
 
 .reset {
     position: absolute;
