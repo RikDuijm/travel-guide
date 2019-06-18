@@ -123,9 +123,29 @@ function initMap(){
         ['Hotel Mariel', -12.117951, -77.027370, hotel],
         ['Aeropuerto Internacional Jorge Chávez', -12.024158, -77.111939, information]
     ];
-    
+ 
+
     var locationsCusco = [
-        ['Plaza de Armas', -13.516706, -71.978814, camera]
+        ['Plaza de Armas', -13.516706, -71.978814, camera],
+        ['Inca muur', -13.515981, -71.976277, camera],
+        ['Barrio de San Blas', -13.515158, -71.974226, camera],
+        ['Mercado de San Pedro', -13.521096, -71.982496, camera],
+        ['Sacsaywamán', -13.509773, -71.981678, camera],
+        ['de Heilige Vallei', -13.407218, -71.844302, camera],
+        ['Machu Picchu', -13.160992, -72.545153, camera],
+        ['Regenwoud van Manu', -12.221888, -71.001184, camera],
+        ['Inkarri Hostal', -13.518024, -71.973280, hotel],
+        ['Andenes al Cielo ', -13.515211, -71.975984, hotel],
+        ['Niños Hotel I', -13.516234, -71.983221, hotel],
+        ['El Mercado Tunqui', -13.516292, -71.982495, hotel],
+        ['Paddys Irish Pub', -13.516695, -71.977535, restaurant],
+        ['El Paisa', -13.523403, -71.973704, restaurant],
+        ['Ciccciolina', -13.516145, -71.976656, restaurant],
+        ['Marcelo Batata', -13.515914, -71.976790, restaurant],
+        ['busterminal Cruz del Sur', -13.532846, -71.968532, information],
+        ['bank BCP', -13.518536, -71.977983, information],
+        ['Clínica Pardo', -13.521621, -71.965407, information],
+        ['toeristenpolitie', -13.514825, -71.981167, information]
     ];
     
 
@@ -167,7 +187,6 @@ function initMap(){
         markersArequipa.push(markerArequipa);
     }
 
-
     for (iLima = 0; iLima < locationsLima.length; iLima++) {
         markerLima = new google.maps.Marker({
             position: new google.maps.LatLng(locationsLima[iLima][1], locationsLima[iLima][2]),
@@ -202,7 +221,7 @@ function initMap(){
         markersCusco.push(markerCusco);
         
  // Walking route Cusco
-    var routeCuscoCoordinates = [
+     var routeCuscoCoordinates = [
     {lat: -13.516277, lng: -71.978577},
     {lat: -13.515703, lng: -71.978170},
     {lat: -13.514519, lng: -71.978849},
@@ -233,7 +252,7 @@ function initMap(){
     {lat: -13.515506, lng: -71.977797},
     {lat: -13.515703, lng: -71.978170},
     {lat: -13.516277, lng: -71.978577}
-    ];
+    ];   
 
   routeCusco = new google.maps.Polyline({
     path: routeCuscoCoordinates,
@@ -242,12 +261,9 @@ function initMap(){
     strokeWeight: 2
   });
 
-  addLine();
+ 
 }
 
-function addLine() {
-  routeCusco.setMap(mapCusco);
-}
 
  $(".removeLine").click(function(){
         routeCusco.setMap(null);
@@ -308,9 +324,6 @@ function addLine() {
 */
 
 
-
-
-// Walking route Cusco
 
 
 
