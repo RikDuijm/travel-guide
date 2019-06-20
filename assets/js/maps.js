@@ -126,9 +126,9 @@ function initMap(){
  
 
     var locationsCusco = [
-        ['Plaza de Armas', -13.516706, -71.978814, camera],
-        ['Inca muur', -13.515981, -71.976277, camera],
-        ['Barrio de San Blas', -13.515158, -71.974226, camera],
+        ['<p><strong>Plaza de Armas</strong>Ooit het centrale plein van de hoofdstad van de Inca’s, wordt Cusco’s Plaza de Armas gedomineerd door de Kathedraal en de Kerk van de Jezuïeten (foto). In de straatjes die uitkomen op het stadsplein staan koloniale gebouwen zij aan zij met Inca-ruïnes.</p><img src="assets/images/cusco-plaza.jpg" width="100%" alt="Plaza de Armas, Cusco">', -13.516706, -71.978814, camera],
+        ['<p><strong>Inca muur</strong></p><img src="assets/images/cusco-muur.jpg" width="100%" alt="Inca-muur, Cusco">', -13.515981, -71.976277, camera],
+        ['<p><strong>Barrio de San Blas</strong><br></p><img src="assets/images/cusco-sanblas.jpg" width="100%" alt="San Blas, Cusco">', -13.515158, -71.974226, camera],
         ['Mercado de San Pedro', -13.521096, -71.982496, camera],
         ['Sacsaywamán', -13.509773, -71.981678, camera],
         ['de Heilige Vallei', -13.407218, -71.844302, camera],

@@ -13,9 +13,9 @@ $(document).ready(function() {
         $(".markers").on("click",function(){
             $(this).next().toggle();
         });
+
     });
-    
-    
+
 /* ----------------------------------------------------------- Navigate Lima */
 
 

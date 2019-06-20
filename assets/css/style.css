@@ -150,10 +150,22 @@ https://mapstyle.withgoogle.com/
 }
 */
 
+.markers {
+    background-color: #ebe9e5;
+    padding-left: 10px;
+}
 
 .markers-text {
     display: none;
+    padding-left: 10px;
 }
+
+
+.markers-pic {
+    display: grid; 
+    margin: 15px auto;
+}
+
 
 #lima-map {
     width: 325px;
