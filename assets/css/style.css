@@ -58,6 +58,8 @@ h4:hover {
 
 a {
     color: #8092f7;
+    cursor: pointer;
+
 }
 
 a:hover {
@@ -74,7 +76,7 @@ a:hover {
 .hoofdbeeld-rechts {
     position: relative;
     width: 100%;
- }
+}
 
 .scroll-to, .choose {
     cursor: pointer;
@@ -84,10 +86,7 @@ a:hover {
     color: #8FC1E3;
 }
 
-
-.position {
-    position: absolute;
-    left: 40%;
+button {
     color: #00887A;
     font-weight: 600;
     font-size: 0.86rem;
@@ -96,22 +95,21 @@ a:hover {
     border-radius: 8px;
 }
 
-.reset {
-    position: absolute;
-    right: 5px;
-    top: 6%;
-    color: #00887A;
-    font-weight: 600;
-    font-size: 0.86rem;
-    background-color: #D3E3F7;
-    border: none;
-    border-radius: 8px;
-}
-
-.opieuw:hover {
+button:hover {
     color: #8092f7;
 }
+.reset {
+    margin-right: 10px;
+}
 
+.addLine {
+    float: right;
+    margin-right: 10px;
+}
+
+.removeLine {
+    float: right;
+}
 
 
 /* https://www.w3schools.com/css/css_align.asp How to center align elements
@@ -132,8 +130,7 @@ https://mapstyle.withgoogle.com/
 
 .choose-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto 5px auto;
 }
 
 .chosen-image {
@@ -150,6 +147,7 @@ https://mapstyle.withgoogle.com/
 }
 */
 
+/*
 .markers {
     background-color: #ebe9e5;
     padding-left: 10px;
@@ -162,10 +160,15 @@ https://mapstyle.withgoogle.com/
 
 
 .markers-pic {
-    display: grid; 
+    display: grid;
     margin: 15px auto;
 }
+*/
 
+
+.categories {
+    background-color: aliceblue;
+}
 
 #lima-map {
     width: 325px;
@@ -183,23 +186,20 @@ https://mapstyle.withgoogle.com/
 
 
 #floating-panel {
-
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
-  text-align: center;
-  font-family: 'Roboto','sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
+    /*background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;*/
 }
 
 #cusco-map {
-    width: 325px;
-    height: 500px;
+    height: 600px;
     margin-right: auto;
     margin-left: auto;
 }
-
 
 img {
     display: block;
@@ -215,11 +215,7 @@ img {
 }
 
 li {
-    color: #337ab7;
-}
-
-li:click {
-    color: green;
+    color: #8092f7;
 }
 
 /* ----------------------------------------------------------- Display of Text */
@@ -254,8 +250,8 @@ li:click {
 /*-----------------------------------------------------------Dropdown*/
 
 .lima-attracties, .lima-hotels, .lima-restaurants, .lima-info,
-.arequipa-attracties, .arequipa-hotels, .arequipa-restaurants, .arequipa-info, 
-.cusco-attracties, .cusco-hotels, .cusco-restaurants, .cusco-info, 
+.arequipa-attracties, .arequipa-hotels, .arequipa-restaurants, .arequipa-info,
+.cusco-attracties, .cusco-hotels, .cusco-restaurants, .cusco-info,
 .markers-text {
     display: none;
 }

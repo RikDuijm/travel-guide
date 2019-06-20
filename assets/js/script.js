@@ -9,14 +9,17 @@ $(document).ready(function() {
     })
 
 
-    $(function(){
-        $(".markers").on("click",function(){
-            $(this).next().toggle();
-        });
-
+    /* $(function(){
+         $(".markers").on("click",function(){
+             $(this).next().toggle();
+         });
     });
 
-/* ----------------------------------------------------------- Navigate Lima */
+
+ */
+
+
+    /* ----------------------------------------------------------- Navigate Lima */
 
 
     $("#lima-nav").click(function() {
@@ -30,8 +33,8 @@ $(document).ready(function() {
     $("#lima-attracties-header").click(function() {
         $("#lima-attracties-text").toggle();
     });
-    
-        $("#lima-attracties-header").click(function() {
+
+    $("#lima-attracties-header").click(function() {
         $(".lima-attracties").toggle();
         $(".lima-hotels").hide();
         $(".lima-restaurants").hide();
@@ -128,44 +131,44 @@ $(document).ready(function() {
         $(".cusco-restaurants").hide();
         $(".cusco-info").toggle();
     });
-    
-
-/*
-
- $(".destination-headers").click(function() {
-        $(this).children("ol").toggle();
-    });
-
-    $(".markers").click(function() {
-        $(this).children("li").toggle();
-    });
-
-    $("#arequipa-attracties-header").click(function() {
-        $("#arequipa-attracties-text").toggle();
-    });
-
-    $("#arequipa-attracties-header").click(function() {
-        $("#arequipa-attracties-text").toggle();
-    });
 
 
+    /*
 
-    $("#arequipa-hotels-header").click(function() {
-        $("#arequipa-hotels-text").toggle();
-    });
+     $(".destination-headers").click(function() {
+            $(this).children("ol").toggle();
+        });
 
-    $("#arequipa-restaurants-header").click(function() {
-        $("#arequipa-restaurants-text").toggle();
-    });
+        $(".markers").click(function() {
+            $(this).children("li").toggle();
+        });
 
-    $("#arequipa-handig-header").click(function() {
-        $("#arequipa-handig-text").toggle();
-    });
+        $("#arequipa-attracties-header").click(function() {
+            $("#arequipa-attracties-text").toggle();
+        });
 
-    $("#arequipa-juanita-icon").click(function() {
-        $("#arequipa-attracties-text").toggle();
-    });
-*/
+        $("#arequipa-attracties-header").click(function() {
+            $("#arequipa-attracties-text").toggle();
+        });
+
+
+
+        $("#arequipa-hotels-header").click(function() {
+            $("#arequipa-hotels-text").toggle();
+        });
+
+        $("#arequipa-restaurants-header").click(function() {
+            $("#arequipa-restaurants-text").toggle();
+        });
+
+        $("#arequipa-handig-header").click(function() {
+            $("#arequipa-handig-text").toggle();
+        });
+
+        $("#arequipa-juanita-icon").click(function() {
+            $("#arequipa-attracties-text").toggle();
+        });
+    */
     /* ----------------------------------------------------------- Map Arequipa */
 
     /* ----------------------------------------------------------- Scroll down */
