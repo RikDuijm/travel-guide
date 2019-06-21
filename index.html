@@ -45,115 +45,199 @@
 
     <article class="row no-gutters" id="lima-intro">
 
-        <div class="col-12">
+        <div class="col">
             <button class="reset" a href="#plan">Verken andere stad</a></button>
             <button class="whereAmI">Toon mijn locatie</button>
             <h2>Lima</h2>
             <h3>Restaurants van wereldfaam!</h3>
             <p>U vliegt vanuit Europa op Lima. Vanwege slechte aansluitingen van binnenlandse vluchten zult u zowel aan het begin als aan het eind van uw reis een nacht in Peru's hoofdstad verblijven. Geen straf, want hier vindt u enkele restaurants van wereldfaam!</p>
-
-
-            <strong>Zoek:</strong> <br>
         </div>
 
-        <div class="row">
+        <div class="row no-gutters categories">
             <div class="col choose" id="lima-attracties-header"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="choose-image" alt="attracties"><h4>Attracties</h4></div>
             <div class="col choose" id="lima-hotels-header"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="choose-image" alt="hotels"><h4>Hotels</h4></div>
             <div class="col choose" id="lima-restaurants-header"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="choose-image" alt="restaurants"><h4>Restaurants</h4></div>
             <div class="col choose" id="lima-info-header"><img src="https://img.icons8.com/color/24/000000/information.png" class="choose-image" alt="praktische informatie"><h4>Informatie</h4></div>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 lima-attracties">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span></div>
-                <div class="markers"><strong><a href="#lima-map" onclick="clickLima();">Plaza de Armas</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#lima-map" onclick="clickLima();">Larco Mar</a></strong></div>
-                <div class="markers-text">tekst</div>
+        <div class="row no-gutters">
+            <div class="col-md-4 lima-attracties">
+                <img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span>
+                <ul><strong>
+                    <li><a href="#lima-map" onclick="clickLima(0);">Larcomar</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(1);">Barranco</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(2);"></a>Museo Larco</li>
+                    <li><a href="#lima-map" onclick="clickLima(3);">Plaza Mayor</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6 lima-hotels">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span></div>
-                <div class="markers"><strong><a href="#lima-map" onclick="clickLima(0);">Casa Wayra</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#lima-map" onclick="clickLima(1);">Hotel Mariel</a></strong></div>
-                <div class="markers-text">tekst</div>
+            <div class="col-md-4 lima-hotels">
+                <img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span>
+                <ul><strong>
+                    <li><a href="#lima-map" onclick="clickLima(4);">Casa Wayra</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(5);">Hotel Mariel</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(6);">Second Home</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(7);">Atemporal</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6 lima-restaurants">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span></div>
+            <div class="col-md-4 lima-restaurants">
+                <img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span>
+                <ul><strong>
+                    <li><a href="#lima-map" onclick="clickLima(8);">Astrid y Gastón</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(9);">Restaurante Central</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(10);">El Muelle</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(11);">Mangos</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6 lima-info">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span></div>
-                <div class="markers"><strong><a href="#lima-map" onclick="clickLima(2);">Aeropuerto Internacional Jorge Chavez</a></strong></div>
-                <div class="markers-text">tekst</div>
+            <div class="col-md-4 lima-info">
+                <img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span>
+                <ul><strong>
+                    <li><a href="#lima-map" onclick="clickLima(12);">luchthaven</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(13);">bank BCP Miraflores</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(14);">bank BCP Barranco</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(15);">Clínica Ricardo Palma</a></li>
+                    <li><a href="#lima-map" onclick="clickLima(16);">toeristenpolitie</a></li>
+                </strong></ul>
             </div>
 
-            <div id="lat"></div>
-            <div id="long"></div>
-            <div class="col-md-6" id="lima-map"></div>
+            <div class="col big-map" id="lima-map"></div>
         </div>
 
     </article>
 
+    <article class="row no-gutters" id="puno-intro">
+
+        <div class="col">
+            <button class="reset" a href="#plan">Verken andere stad</a></button>
+            <button class="whereAmI">Toon mijn locatie</button>
+            <h2>Puno</h2>
+
+            <h3>In het hart van de Andes</h3>
+            <p>Puno heeft geen grote toeristische attracties, maar het straatbeeld maakt veel goed: u zult merken dat de bevolking veel traditioneler is dan in Arequipa of Lima. Struin eens rond in de marktstraatjes, of laat u rondrijden in een fietstaxi. Nu bent u echt in de Andes beland!<br><br>
+                Echte publiekstrekkers liggen buiten de stad: het Titicacameer, met traditionele eilanden waar de tijd lijkt te hebben stilgestaan, of het enigmatische Sillustani.</p>
+        </div>
+
+        <div class="row no-gutters categories">
+            <div class="col choose" id="puno-attracties-header"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="choose-image" alt="attracties"><h4>Attracties</h4></div>
+            <div class="col choose" id="puno-hotels-header"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="choose-image" alt="hotels"><h4>Hotels</h4></div>
+            <div class="col choose" id="puno-restaurants-header"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="choose-image" alt="restaurants"><h4>Restaurants</h4></div>
+            <div class="col choose" id="puno-info-header"><img src="https://img.icons8.com/color/24/000000/information.png" class="choose-image" alt="praktische informatie"><h4>Informatie</h4></div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-md-4 puno-attracties">
+                <img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span>
+                <ul><strong>
+                    <li><a href="#puno-map" onclick="clickPuno(0);">Plaza de Armas</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(1);">Uros-eilanden</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(2);"></a>Taquile</li>
+                    <li><a href="#puno-map" onclick="clickPuno(3);">Sillustani</a></li>
+                </strong></ul>
+            </div>
+
+            <div class="col-md-4 puno-hotels">
+                <img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span>
+                <ul><strong>
+                    <li><a href="#puno-map" onclick="clickPuno(4);">Hotel Intiqa</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(5);">La Hacienda Plaza de Armas</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(6);">Casa Andina Premium Lago</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(7);">Sonesta Posada del Inca</a></li>
+                </strong></ul>
+            </div>
+
+            <div class="col-md-4 puno-restaurants">
+                <img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span>
+                <ul><strong>
+                    <li><a href="#puno-map" onclick="clickPuno(8);">Mojsa</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(9);">Tradiciones del Lago</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(10);">Giorgio</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(11);">La Table del Inca</a></li>
+                </strong></ul>
+            </div>
+
+            <div class="col-md-4 puno-info">
+                <img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span>
+                <ul><strong>
+                    <li><a href="#puno-map" onclick="clickPuno(12);">busterminal</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(13);">bank BCP</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(15);">Medicentro Tourist Health</a></li>
+                    <li><a href="#puno-map" onclick="clickPuno(16);">toeristenpolitie</a></li>
+                </strong></ul>
+            </div>
+
+            <div class="col big-map" id="puno-map"></div>
+        </div>
+
+
+    </article>
 
     <article class="row no-gutters" id="arequipa-intro">
 
-        <div class="col-12">
+        <div class="col">
             <button class="reset" a href="#plan">Verken andere stad</a></button>
             <button class="whereAmI">Toon mijn locatie</button>
             <h2>Arequipa</h2>
+
             <h3>Acclimatiseren in een oase</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque rerum, quis. Dolorem iure nulla, ipsam quae. Similique culpa porro facilis voluptatum aspernatur repellat, illo, dolorem sunt inventore error incidunt.</p>
-
-
-            <strong>Zoek:</strong> <br>
+            <p>Arequipa, gelegen op 2400 meter boven zeeniveau, is een prima plek om enkele dagen te verblijven om te acclimatiseren voordat u naar nog grotere hoogte reist: schoon, vrolijk en de zon schijnt er vrijwel altijd. “De Witte Stad” wordt gedomineerd door de vulkanen El Misti (5825 meter) en Chachani (6075 meter) en heeft een volkomen ander straatbeeld dan bijvoorbeeld Puno en Cusco. De binnenstad is opgenomen op de Werelderfgoedlijst. U treft er prachtige architectuur, schitterende musea en prima restaurants.</p>
         </div>
 
-        <div class="row">
+        <div class="row no-gutters categories">
             <div class="col choose" id="arequipa-attracties-header"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="choose-image" alt="attracties"><h4>Attracties</h4></div>
             <div class="col choose" id="arequipa-hotels-header"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="choose-image" alt="hotels"><h4>Hotels</h4></div>
             <div class="col choose" id="arequipa-restaurants-header"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="choose-image" alt="restaurants"><h4>Restaurants</h4></div>
             <div class="col choose" id="arequipa-info-header"><img src="https://img.icons8.com/color/24/000000/information.png" class="choose-image" alt="praktische informatie"><h4>Informatie</h4></div>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 arequipa-attracties">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span></div>
-                <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(0);">Monasterio de Santa Catalina</a></strong></div>
-                <div class="markers-text">tekst</div>
-
-                <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(1);">Museo de Juanita</a></strong></div>
-                <div class="markers-text">tekst</div>
+        <div class="row no-gutters">
+            <div class="col-md-4 arequipa-attracties">
+                <img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span>
+                <ul><strong>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(0);">Plaza de Armas</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(1);">Monasterio de Santa Catalina</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(2);"></a>Museo de Juanita</li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(3);">Barrio de San Lázaro</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(4);">Mercado San Camilo</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(5);">El Misti & Chachani</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6 arequipa-hotels">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span></div>
-                <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(2);">Hotel Casona Solar</a></strong></div>
-                <div class="markers-text">tekst</div>
-
+            <div class="col-md-4 arequipa-hotels">
+                <img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span>
+                <ul><strong>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(6);">Casa de Avila</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(7);">La Hosteria</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(8);">Casona Solar</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(9);">Katari Hotel</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6 arequipa-restaurants">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span></div>
-                <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(3);">Zig Zag</a></strong></div>
-                <div class="markers-text">tekst</div>
-
+            <div class="col-md-4 arequipa-restaurants">
+                <img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span>
+                <ul><strong>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(10);">Zig Zag</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(11);">Tradición Arequipeña</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(12);">Chicha</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6 arequipa-info">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span></div>
-                <div class="markers"><strong><a href="#arequipa-map" onclick="clickArequipa(4);">Toeristische informatie</a></strong></div>
-                <div class="markers-text">tekst</div>
-
+            <div class="col-md-4 arequipa-info">
+                <img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span>
+                <ul><strong>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(13);">busterminal Cruz del Sur</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(14);">bank BCP</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(15);">kliniek</a></li>
+                    <li><a href="#arequipa-map" onclick="clickArequipa(16);">toeristenpolitie</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col-md-6" id="arequipa-map"></div>
+            <div class="col big-map" id="arequipa-map"></div>
         </div>
 
-    </article>
 
+    </article>
 
     <article class="row no-gutters" id="cusco-intro">
 
@@ -167,17 +251,16 @@
                <br><br> Cusco is de uitvalbasis voor zowel tours en trektochten naar het wereldberoemde Machu Picchu als voor tochten naar het Amazone-regenwoud van Manu. Hier lopen zelfs nog ongecontacteerde indianenstammen rond!</p>
         </div>
 
-        <div class="row categories">
+        <div class="row no-gutters categories">
             <div class="col choose" id="cusco-attracties-header"><img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="choose-image" alt="attracties"><h4>Attracties</h4></div>
             <div class="col choose" id="cusco-hotels-header"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="choose-image" alt="hotels"><h4>Hotels</h4></div>
             <div class="col choose" id="cusco-restaurants-header"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="choose-image" alt="restaurants"><h4>Restaurants</h4></div>
             <div class="col choose" id="cusco-info-header"><img src="https://img.icons8.com/color/24/000000/information.png" class="choose-image" alt="praktische informatie"><h4>Informatie</h4></div>
         </div>
 
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-md-4 cusco-attracties">
                 <img src="https://img.icons8.com/color/24/000000/old-time-camera.png" class="chosen-image" alt="attracties"><span class="chosen-header">Attracties</span>
-
                 <ul><strong>
                     <li><a href="#cusco-map" onclick="clickCusco(0);">Plaza de Armas</a></li>
                     <li><a href="#cusco-map" onclick="clickCusco(1);">Inca muur</a></li>
@@ -188,48 +271,45 @@
                     <li><a href="#cusco-map" onclick="clickCusco(6);">Machu Picchu</a></li>
                     <li><a href="#cusco-map" onclick="clickCusco(7);">Manu</a></li>
                 </strong></ul>
-
             </div>
 
             <div class="col-md-4 cusco-hotels">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span></div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(8);">Inkarri Hostel</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(9);">Andenes al Cielo</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(10);">Niños Hotel I</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(11);">El Mercado</a></strong></div>
-                <div class="markers-text">tekst</div>
+                <img src="https://img.icons8.com/color/24/000000/hotel-information.png" class="chosen-image" alt="hotels"><span class="chosen-header">Hotels</span>
+                <ul><strong>
+                    <li><a href="#cusco-map" onclick="clickCusco(8);">Inkarri Hostel</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(9);">Andenes al Cielo</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(10);">Niños Hotel I</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(11);">El Mercado</a></li>
+                </strong></ul>
             </div>
 
             <div class="col-md-4 cusco-restaurants">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span></div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(12);">Paddy's Irish Pub</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(13);">El Paisa</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(14);">Ciccciolina</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(15);">Marcelo Batata</a></strong></div>
-                <div class="markers-text">tekst</div>
+                <img src="https://img.icons8.com/color/24/000000/dining-room.png" class="chosen-image" alt="hotels"><span class="chosen-header">Restaurants</span>
+                <ul><strong>
+                    <li><a href="#cusco-map" onclick="clickCusco(12);">Paddy's Irish Pub</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(13);">El Paisa</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(14);">Ciccciolina</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(15);">Marcelo Batata</a></li>
+                </strong></ul>
             </div>
 
             <div class="col-md-4 cusco-info">
-                <div class="chosen"><img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span></div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(16);">busterminal Cruz del Sur</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(17);">bank BCP</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(18);">Clínica Pardo</a></strong></div>
-                <div class="markers-text">tekst</div>
-                <div class="markers"><strong><a href="#cusco-map" onclick="clickCusco(19);">toeristenpolitie</a></strong></div>
-                <div class="markers-text">tekst</div>
+                <img src="https://img.icons8.com/color/24/000000/information.png" class="chosen-image" alt="praktische informatie"><span class="chosen-header">Praktische adressen</span>
+                <ul><strong>
+                    <li><a href="#cusco-map" onclick="clickCusco(16);">busterminal Cruz del Sur</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(17);">bank BCP</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(18);">Clínica Pardo</a></li>
+                    <li><a href="#cusco-map" onclick="clickCusco(19);">toeristenpolitie</a></li>
+                </strong></ul>
             </div>
 
-            <div class="col" id="cusco-map"></div>
+            <div class="col big-map" id="cusco-map"></div>
+
         </div>
-        <div class="row">
+
+
+
+        <div class="row no-gutters">
             <button class="addLine">Toon wandelroute</button>
             <button class="removeLine">Verwijder wandelroute</button>
         </div>
@@ -238,14 +318,8 @@
 
 </section>
 
-
-
-
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
-
-
-
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>

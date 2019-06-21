@@ -97,7 +97,7 @@ $(document).ready(function() {
         $(".arequipa-info").toggle();
     });
 
-    /* ----------------------------------------------------------- Navigate Arequipa */
+    /* ----------------------------------------------------------- Navigate Cusco */
 
     $("#cusco-nav").click(function() {
         $("#cusco-intro").show();
@@ -132,6 +132,40 @@ $(document).ready(function() {
         $(".cusco-info").toggle();
     });
 
+    /* ----------------------------------------------------------- Navigate Puno */
+
+    $("#puno-nav").click(function() {
+        $("#puno-intro").show();
+        $("#cusco-intro").hide();
+        $("#lima-intro").hide();
+        $("#arequipa-intro").hide();
+    });
+
+    $("#puno-attracties-header").click(function() {
+        $(".puno-attracties").toggle();
+        $(".puno-hotels").hide();
+        $(".puno-restaurants").hide();
+        $(".puno-info").hide()
+    });
+
+    $("#puno-hotels-header").click(function() {
+        $(".puno-attracties").hide();
+        $(".puno-hotels").toggle();
+        $(".puno-restaurants").hide();
+        $(".puno-info").hide();
+    });
+    $("#puno-restaurants-header").click(function() {
+        $(".puno-attracties").hide();
+        $(".puno-hotels").hide();
+        $(".puno-restaurants").toggle();
+        $(".puno-info").hide();
+    });
+    $("#puno-info-header").click(function() {
+        $(".puno-attracties").hide();
+        $(".puno-hotels").hide();
+        $(".puno-restaurants").hide();
+        $(".puno-info").toggle();
+    });
 
     /*
 
