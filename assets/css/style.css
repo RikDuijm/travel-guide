@@ -274,3 +274,31 @@ li {
 
 
 }*/
+/* ----------------------------------------------------------- Scroll down */
+
+.footer-header {
+    text-align: center;
+    color: #8092f7;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-header i {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-header i:hover {
+    color: #8FC1E3;
+    transition: 0.5s ease-in-out;
+}
+
+.footer-credits {
+    font-size: 10px;
+    font-weight: 300;
+}

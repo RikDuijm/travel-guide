@@ -1,11 +1,15 @@
 $(document).ready(function() {
     $(".reset").click(function() {
+        //Reset any JS variable values held in memory.
+        /* window.location.reload(); */
+
+        //Maintain last searched item / map
         $("#lima-intro").hide();
         $("#arequipa-intro").hide();
         $("#puno-intro").hide();
         $("#cusco-intro").hide();
         document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera */
     })
 
 
@@ -216,3 +220,5 @@ $(document).ready(function() {
     });
 
 });
+
+
