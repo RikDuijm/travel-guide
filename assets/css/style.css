@@ -1,23 +1,4 @@
-@media (min-width: 300px) {
-    .big-map {
-        flex-basis: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    .big-map {
-        flex-basis: 0;
-    }
-}
-
-/*
-@media (min-width: 768px) {
-    .small-map {
-        display: none;
-    }
-}
-
-/* ----------------------------------------------------------- Body General */
+/* ------------------------------------------------------------------------------------------- Body - Layout */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -27,30 +8,57 @@ body {
     margin: 20px 20px 10px 10px;
 }
 
+/* Without this, bootstrap causes a horizontal scrollbar */
 .container-fluid {
-    /* without this, bootstrap causes a horizontal scrollbar */
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
 }
 
+.hoofdbeeld-links {
+    position: relative;
+    width: 100%;
+}
+
+.hoofdbeeld-rechts {
+    position: relative;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------- Body -  User Experience / Colour Scheme  */
 h1 {
     color: #00887A;
+}
+
+a {
+    color: #8092f7;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #8FC1E3;
+}
+
+.scroll-to, .choose {
+    cursor: pointer;
+}
+
+.scroll-to:hover {
+    color: #8FC1E3;
+}
+
+h2 {
+    color: #8092f7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    background-color: #ebe9e5;
+    padding: 5px;
 }
 
 h3 {
     font-size: 1.5rem;
     display: inline;
     color: #8FC1E3;
-}
-
-
-h2{
-    color: #8092f7;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    background-color: #ebe9e5;
-    padding: 5px;
 }
 
 h4 {
@@ -76,47 +84,6 @@ h4:hover {
     }
 }
 
-.chosen-header {
-    dispay: inline;
-    color: #00887A;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.chosen {
-    background-color: #D3E3F7;
-}
-
-a {
-    color: #8092f7;
-    cursor: pointer;
-
-}
-
-a:hover {
-    color: #8FC1E3;
-}
-
-
-.hoofdbeeld-links {
-    position: relative;
-    width: 100%;
-
-}
-
-.hoofdbeeld-rechts {
-    position: relative;
-    width: 100%;
-}
-
-.scroll-to, .choose {
-    cursor: pointer;
-}
-
-.scroll-to:hover {
-    color: #8FC1E3;
-}
-
 button {
     color: #00887A;
     font-weight: 600;
@@ -129,35 +96,33 @@ button {
 button:hover {
     color: #8092f7;
 }
+
 .reset {
     margin-right: 10px;
 }
 
 .addLine {
     float: right;
+    margin-top: 10px;
     margin-right: 10px;
 }
 
 .removeLine {
+    margin-top: 10px;
     float: right;
 }
 
-
-/* https://www.w3schools.com/css/css_align.asp How to center align elements
-
-https://mapstyle.withgoogle.com/
-
- */
-
-/*--------------------------------------------Map*   @mediaquerry for desktop??? */
-
-
-.destination-headers {
-    display: block;
-    position: relative;
-    left: -40px;
+/*------------------------------------------------------------------------------------------- Map*/
+.categories {
+    background-color: aliceblue;
 }
 
+/*Keeps map in place on devices < 768px */
+@media (min-width: 360px) {
+    .big-map {
+        flex-basis: auto;
+    }
+}
 
 .choose-image {
     display: block;
@@ -170,96 +135,33 @@ https://mapstyle.withgoogle.com/
     margin-right: 10px;
 }
 
-/*
-.destination-texts {
-    position: relative;
-    left: -20px;
-    color: #484C4F;
+.chosen-header {
+    dispay: inline;
+    color: #00887A;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
-*/
-
-/*
-.markers {
-    background-color: #ebe9e5;
-    padding-left: 10px;
-}
-
-.markers-text {
-    display: none;
-    padding-left: 10px;
-}
-
-
-.markers-pic {
-    display: grid;
-    margin: 15px auto;
-}
-*/
-
-
-.categories {
-    background-color: aliceblue;
-}
-
-#lima-map, #puno-map, #arequipa-map, #cusco-map {
-    width: 325px;
-    height: 500px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
 
 img {
     display: block;
     margin-left: auto;
-}
-
-img {
     margin-right: auto;
 }
 
-.info {
-    margin-left: 50px;
+#lima-map, #puno-map, #arequipa-map, #cusco-map {
+    width: 325px;
+    height: 650px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 li {
     color: #8092f7;
 }
 
-/* ----------------------------------------------------------- Display of Text */
+/* ------------------------------------------------------------------------------------------- Display of Text */
 
-#lima-intro {
-    display: none;
-}
-
-#arequipa-intro {
-    display: none;
-}
-
-#cusco-intro {
-    display: none;
-}
-
-#puno-intro {
-    display: none;
-}
-/*
-#lima-attracties-text {
-    display: none;
-}
-
-
-#arequipa-attracties-text {
-    display: none;
-}
-
-#arequipa-hotels-text {
-    display: none;
-}
-*/
-
-/*-----------------------------------------------------------Dropdown*/
+#lima-intro, #arequipa-intro, #cusco-intro, #puno-intro,
 .lima-attracties, .lima-hotels, .lima-restaurants, .lima-info,
 .puno-attracties, .puno-hotels, .puno-restaurants, .puno-info,
 .arequipa-attracties, .arequipa-hotels, .arequipa-restaurants, .arequipa-info,
@@ -268,32 +170,26 @@ li {
     display: none;
 }
 
-/*
-.selecteer {
-    display: inline;
-
-
-}*/
-/* ----------------------------------------------------------- Scroll down */
+/* -------------------------------------------------------------------------------------------  Footer */
 
 .footer-header {
     text-align: center;
     color: #8092f7;
-    font-size: 2vw;
-    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .footer-text {
     text-align: center;
 }
 
-.footer-header i {
+.footer-text i {
     font-size: 30px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.footer-header i:hover {
+.footer-text i:hover {
     color: #8FC1E3;
     transition: 0.5s ease-in-out;
 }

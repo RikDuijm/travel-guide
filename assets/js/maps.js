@@ -81,24 +81,32 @@ function initMap(){
     var optionsLima = {
         zoom: 13,
         center: {lat:-12.122026,lng:-77.030747},
+        mapTypeControl: false,
+        scaleControl: true,
         styles: generalStyles
     };
 
     var optionsPuno = {
         zoom: 12,
         center: {lat:-15.840693,lng:-70.027999},
+        mapTypeControl: false,
+        scaleControl: true,
         styles: generalStyles
     };
 
     var optionsArequipa = {
         zoom: 16,
         center: {lat:-16.398803,lng:-71.536916},
+        mapTypeControl: false,
+        scaleControl: true,
         styles: generalStyles
     };
 
     var optionsCusco = {
         zoom: 16,
         center: {lat:-13.516706,lng:-71.978814},
+        mapTypeControl: false,
+        scaleControl: true,
         styles: generalStyles
     };
 
@@ -201,34 +209,34 @@ function initMap(){
         ['<h5>busterminal Cruz del Sur</h5><p>Veiligheidshalve werken wij uitsluitend met de lange afstandsbussen van Cruz del Sur. Dit is de meest aangeraden, veiligste en betrouwbaarste maatschappij van Peru. In Cusco heeft men een eigen busterminal.</p>', -13.532846, -71.968532, bus],
         ['<h5>Bank BCP</h5><p>Bij de BCP (Banco de Crédito de Perú) kunt u meer dan bij andere banken pinnen, en betaalt u daarnaast ook nog eens de minste commissie. De pinautomaten worden bovendien in de gaten gehouden door veiligheidspersoneel.</p>', -13.518536, -71.977983, bank],
         ['<h5>Clínica Pardo</h5><p>Van de vele privé-klinieken in Cusco is Clínica Pardo uw beste keuze. Men heeft veel specialisten in dienst, en Engels-sprekende artsen. Soms ontvangt u onnodig veel examens en behandelingen: men weet dat u goed verzekerd bent. Voelt u zich ziek, raden we u ook daarom aan ons te bellen op ons noodnummer.</p>', -13.521621, -71.965407, hospital],
-        ['<h5><>Toeristenpolitie</h5><p>Houdt er rekening mee dat u niet altijd netjes behandeld wordt door de toeristenpolitie en dat men zelden goed Engels spreekt. Indien nodig, is het altijd beter ons te bellen op ons noodnummer. Wij kunnen voor u bemiddelen.</p>', -13.514825, -71.981167, police]
+        ['<h5>Toeristenpolitie</h5><p>Houdt er rekening mee dat u niet altijd netjes behandeld wordt door de toeristenpolitie en dat men zelden goed Engels spreekt. Indien nodig, is het altijd beter ons te bellen op ons noodnummer. Wij kunnen voor u bemiddelen.</p>', -13.514825, -71.981167, police]
     ];
 
     var markerLima, iLima;
     var infowindowLima = new google.maps.InfoWindow(
         {
-            maxWidth: 260
+            maxWidth: 360
         }
     );
 
     var markerPuno, iPuno;
     var infowindowPuno = new google.maps.InfoWindow(
         {
-            maxWidth: 260
+            maxWidth: 360
         }
     );
 
     var markerArequipa, iArequipa;
     var infowindowArequipa = new google.maps.InfoWindow(
         {
-            maxWidth: 260
+            maxWidth: 360
         }
     );
 
     var markerCusco, iCusco;
     var infowindowCusco = new google.maps.InfoWindow(
         {
-            maxWidth: 260
+            maxWidth: 360
         }
     );
 
@@ -365,21 +373,12 @@ function initMap(){
         routeCusco.setMap(mapCusco);
     })
 
-/*
-    var markerCluster = new MarkerClusterer(mapArequipa, markersArequipa,
-        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-*/
-
-
-
-    //Geolocation. Because maps are centered with fixed coordinates, Geolocation doesn't bother clients who are not in the city they are looking at.
-    //In that case the Geolocation Marker doesn't show on the map
-
+//Geolocation. Because maps are centered with fixed coordinates, Geolocation doesn't bother clients who are not in the city they are looking at.
+//In that case the Geolocation Marker doesn't show on the map
     $(".whereAmI").click(function() {
         navigator.geolocation.getCurrentPosition(success, error)
 
         function success(position){
-
             // Getting Latitude and Longitude
             var lat = position.coords.latitude;
             var long = position.coords.longitude;
@@ -411,12 +410,10 @@ function initMap(){
             });
         }
         function error() {
-            $('body').html(`Locatie niet bepaald. <a href="index.html">Laad de pagina opnieuw</a>.`);
+            $('body').html('Locatie niet bepaald. U heeft geen toestemming gegeven of uw browser ondersteunt dit niet. <a href="index.html">Laad de pagina opnieuw</a>. test');
         }
     });
 }
-
-
 
 function clickLima(id){
     google.maps.event.trigger(markersLima[id], 'click');
