@@ -26,8 +26,6 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------- Body -  User Experience / Colour Scheme  */
-}
-
 h1 {
     color: #00887A;
 }
@@ -138,7 +136,7 @@ button:hover {
 }
 
 .chosen-header {
-    dispay: inline;
+    display: inline;
     color: #00887A;
     font-size: 1.25rem;
     font-weight: 500;
