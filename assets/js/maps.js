@@ -75,7 +75,7 @@ function initMap(){
                 }
             ]
         }
-    ]
+    ];
 
 //options per map
     var optionsLima = {
@@ -120,8 +120,6 @@ function initMap(){
     var camera = "https://img.icons8.com/color/24/000000/old-time-camera.png";
     var hotel = "https://img.icons8.com/color/24/000000/hotel-information.png";
     var restaurant = "https://img.icons8.com/color/24/000000/dining-room.png";
-    var bar = "https://img.icons8.com/color/24/000000/bar.png";
-    var information = "https://img.icons8.com/color/24/000000/information.png";
     var airport = "https://img.icons8.com/color/30/000000/airplane-take-off.png";
     var bank = "https://img.icons8.com/color/24/000000/euro-pound-exchange.png";
     var bus = "https://img.icons8.com/color/24/000000/bus.png";
@@ -367,16 +365,16 @@ function initMap(){
 
     $(".removeLine").click(function(){
         routeCusco.setMap(null);
-    })
+    });
 
     $(".addLine").click(function(){
         routeCusco.setMap(mapCusco);
-    })
+    });
 
 //Geolocation. Because maps are centered with fixed coordinates, Geolocation doesn't bother clients who are not in the city they are looking at.
 //In that case the Geolocation Marker doesn't show on the map
     $(".whereAmI").click(function() {
-        navigator.geolocation.getCurrentPosition(success, error)
+        navigator.geolocation.getCurrentPosition(success, error);
 
         function success(position){
             // Getting Latitude and Longitude

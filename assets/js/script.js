@@ -25,7 +25,7 @@ $(document).ready(function () {
         $(".lima-attracties").toggle();
         $(".lima-hotels").hide();
         $(".lima-restaurants").hide();
-        $(".lima-info").hide()
+        $(".lima-info").hide();
     });
 
     $("#lima-hotels-header").click(function () {
@@ -59,7 +59,7 @@ $(document).ready(function () {
         $(".puno-attracties").toggle();
         $(".puno-hotels").hide();
         $(".puno-restaurants").hide();
-        $(".puno-info").hide()
+        $(".puno-info").hide();
     });
 
     $("#puno-hotels-header").click(function () {
@@ -94,7 +94,7 @@ $(document).ready(function () {
         $(".arequipa-attracties").toggle();
         $(".arequipa-hotels").hide();
         $(".arequipa-restaurants").hide();
-        $(".arequipa-info").hide()
+        $(".arequipa-info").hide();
     });
 
     $("#arequipa-hotels-header").click(function () {
@@ -129,7 +129,7 @@ $(document).ready(function () {
         $(".cusco-attracties").toggle();
         $(".cusco-hotels").hide();
         $(".cusco-restaurants").hide();
-        $(".cusco-info").hide()
+        $(".cusco-info").hide();
     });
 
     $("#cusco-hotels-header").click(function () {
