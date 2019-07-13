@@ -46,7 +46,7 @@ The Dutch-speaking customers of this operator choose to have their trip organize
 They have a strong interest in culture, charming hotels, local life and love good food. They are looking for secret tips, the gems among the large offer. They want something distinctive, something that displays locality and personality instead of, for example, the clinical hotels or restaurants that one could find in every country in the world.
 
 **What's cultural appropriate for the audience?**<br>
-In its suggestions, the site must emenate that the customer is understood / the operator knows who that is. Like this, the client becomes convinced that this is the right tour operator: also having personality and an opinion based upon expertise. This site is no Google, no TripAdvisor or booking.com, with hundreds of addresses and thousands of often very subjective opinions. No, it's from a local specialist with sublime expertise.
+In its suggestions, the site must emenate that the customer is understood / the operator knows who that is. Like this, the client becomes reassured that this is the right tour operator: also having personality and an opinion based upon expertise. This site is no Google, no TripAdvisor or booking.com, with hundreds of addresses and thousands of often very subjective opinions. No, it's from a local specialist with sublime expertise.
 
 ### <a name="user-stories"></a>User Stories
 **As the touroperator, I would like to distinguish myself from my competition by offering an application that:**<br>
@@ -216,7 +216,7 @@ A suggested itinerary for 2 days per destination, including activities, restaura
 - Github for version control and for users to view the deployed version of the website.
 
 ## <a name="testing"></a>Testing
-###<a name="manual-testing"></a>Manual testing<br>
+### <a name="manual-testing"></a>Manual testing<br>
 - Responsive testing<br>
 The responsiveness of the page was tested 3 times (one time after writing the initial code, then after making several changes, and one time right before the final deployment) locally and on GITHUB pages using Chrome developer tools, in several browsers and devices. Here you can find a specification of the browsers and devices, and the problems encountered and solved.
 
@@ -230,7 +230,7 @@ Safari
 - Testing the outgoing links 
 All hotel and restaurant suggestions have links to their own websites. I tested them all to make sure all are directed correctly and opening in a new window.
 
-###<a name="validation"></a>Automated Testing
+### <a name="validation"></a>Automated Testing
 **Validation services**<br>
 The following validation services were used to check the validity of my code.
 
