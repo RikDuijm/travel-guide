@@ -408,7 +408,7 @@ function initMap(){
             });
         }
         function error() {
-            $('body').html('Locatie niet bepaald. U heeft geen toestemming gegeven of uw browser ondersteunt dit niet. <a href="index.html">Laad de pagina opnieuw</a>. test');
+            $('body').html('Locatie niet bepaald. U heeft geen toestemming gegeven of uw browser ondersteunt dit niet. <a href="index.html">Laad de pagina opnieuw</a>.');
         }
     });
 }
