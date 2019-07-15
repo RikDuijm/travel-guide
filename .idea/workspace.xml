@@ -86,6 +86,11 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="travel-guide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="travel-guide" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -125,16 +130,15 @@
       <updated>1563047241255</updated>
       <workItem from="1563047242725" duration="776000" />
       <workItem from="1563048296585" duration="313000" />
-      <workItem from="1563048798539" duration="6589000" />
+      <workItem from="1563048798539" duration="7264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7678000" />
+    <option name="totallyTimeSpent" value="8353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22339304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
