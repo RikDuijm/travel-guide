@@ -144,8 +144,8 @@ The only difference between mobile screen and larger screens is that the differe
 - Instead of general information and 'sales-language' from big Dutch companies this tool offers inside tips, shows where to find the places we introduce and gives the user the idea we go a step further than other companies in our presentation and service – and that we have the expertise to do this. 
 - This application itself shows a strive for professionalism and service towards the clients. No other local company that offers the same kind of customized journeys for the same audience (Dutch speaking clients) has anything like this. 
  
-## Functionality and Features
-### Existing features
+## <a name="features"></a>Functionality and Features
+### <a name="existing-features"></a>Existing features
 - **Destinations**<br> On the start screen the user sees a short introduction and destinations he can select. This allows him to select the destination of his choice. The page scrolls down and each destination has the following functionalities. 
 
 - **button Verken andere stad (discover other city)**<br>
@@ -176,7 +176,7 @@ Allows the user to follow a suggested walking route through the historic city ce
 - **Footer**<br>
 Allows the user to see the contact details of the tour operator, along with their social media canals. Only the facebook page does actually exist. 
 
-### Features left to Implement 
+### <a name="features-left-to-implement"></a>Features left to Implement 
 **Make a Reservation**<br>
 An option that allows the user to make a hotel, restaurant, or tour reservation immediately from this page.
 
