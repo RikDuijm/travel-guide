@@ -27,7 +27,7 @@ This application serves 2 purposes:
 
 4. [**Testing**](#testing)
    - [Manual Testing](#manual-testing)
-   - [Validation](#validation)
+   - [Automated Testing](#automated-testing)
    - [Note for Code Institute](#note)
    
 5. [**Deployment**](#deployment)
@@ -67,15 +67,11 @@ In its suggestions, the site must emenate that the customer is understood / the 
 
 ### <a name="application"></a>The application
 **What are we making?**<br>
-Given the enormous amount of information that is offered on the Internet, we want to set up a clean, fast and well-arranged application, which gives the customer the opportunity to quickly explore the cities he visits in his tour. He can choose from the hotels selected by the operator, and - with the help of suggestions for tourist attractions, restaurants and practical addresses - plan his time there.
-He can do this by studying the maps, and reading the description that pops-up with a click on the markers.
-Because it is a single page application with a mobile first design, only the information that the customer is looking for must be shown. This must be done in as few clicks as possible. With 1 click, the customer must be able to re-start searching / selecting.
+Given the enormous amount of information that is offered on the Internet, we want to set up a clean, fast and well-arranged application, which gives the customers the opportunity to quickly explore the cities they visit in their tour. They can choose from the hotels selected by the operator, and - with the help of suggestions for tourist attractions, restaurants and practical addresses - plan their time there. They can do this by studying the maps, and reading the description that pops-up with a click on the markers. Because it is a single page application with a mobile first design, only the information that the customer is looking for must be shown. This must be done in as few clicks as possible. With 1 click, the customer must be able to re-start searching / selecting.
 
-With the same thoughts in mind, the maps should only show our suggestions and the street names, perhaps with only the most important landmarks. It must be clean, and stripped of distracting information / addresses. 
+With the same thoughts in mind, the maps should only show our suggestions and the street names, perhaps with only the most important landmarks. It must be clean, and stripped of distracting information / addresses.
 
-The customer must also be able to see on the map where he is at that moment (geolocation), so he can navigate to the points of interest using the map.
-Because the app will be used from any location - for example at home when the user selects a hotel before his vacation - the map should not center on the users position, but on the destination itself. If the user is not at the destination, he therefor will not see his own position. 
-We don't want an aggressive pop-up, asking to share the users position upon loading the website. The user can share his location by clicking on a button, which is a lot less intrusive.
+The customers must also be able to see on the map where they are at that moment (geolocation), so they can navigate to the points of interest using the map. Because the app will be used from any location - for example at home when the user selects a hotel before his vacation - the map should not center on the users position, but on the destination itself. If the users are not at the destination, they therefore will not see their own position. We don't want an aggressive pop-up, asking to share the users position upon loading the website. The user can share his location by clicking on a button, which is a lot less intrusive.
 
 **Why does the user want this?**<br> 
 They got to the website to investigate the possibility to reserve a customized journey with this local operator. It's significant that they consider a local operator over one of the big tour companies of their home country (which most people would consider a safer option, mainly because of guarantee over prepayments and legal issues). Basically they are looking for local expertise, customized programs and the feeling they go off the beaten track, but also for having influence over the itinerary.
@@ -84,7 +80,7 @@ With this tool we offer the information the user is looking for.
 
 ### <a name="content"></a>Content 
 **What content type would be relevant?**<br>
-Every suggestion must be excellent. In this way the customer can be convinced that this is the specialist that offers quality and he/she can quickly give a meaningful interpretation to the journey - without having to scan a lot of information and read-in night after night. 
+Every suggestion must be excellent. In this way the customer can be reassured that this is the specialist that offers quality and he/she can quickly give a meaningful interpretation to the journey - without having to scan a lot of information and read-in night after night. 
 
 Quantity is irrelevant, and it actually has the opposite effect. If one gives suggestions that are proof disappointing, this detracts from customer satisfaction. In addition, the customer has simply no time to process many options. 
 
@@ -102,8 +98,8 @@ The website must be accessible. The user must be able to navigate quickly and in
 **Font**<br>
 I chose the Font 'Roboto', sans-serif because this is a soothing, modern letter. This contributes to the clarity of the page.
 
-**Colors**<br>
-I chose soft, light colors and a clear white background. This also contributes to the clarity.
+**Colours**<br>
+I chose soft, light colours and a clear white background. This also contributes to the clarity.
 
 **Content**<br>
 Only the content that is requested must be visible. The website is mobile first, and the user should scroll as little as possible. This means that I make other information invisible, but at the same time it can be selected quickly.
@@ -116,7 +112,7 @@ Images are very important for a travel website. They inspire. That is why I chos
 **Maps**<br>
 As mentioned before, the maps must be clean an should be stripped of distracting information / addresses. Only the most important landmarks and the street names should be shown, along with our own selected suggestions. It must be clear which marker is a hotel, which a restaurant etc. 
 
-It's important that the map shows all categories (e.g. hotel / point of interest / restaurant) together: the user must understand at once the location / proximity from one place to another to be able to plan a realistic day at leisure. It's also important to see where hotels are situated in relation to restaurants and tourist attractions. So I don't want to show for example only the hotels, but all markers together. Only like this the customer gets an instant idea of distances instead of having to select and deselect categories over and over again. That would be awkward. 
+It's important that the map shows all categories (e.g. hotel / point of interest / restaurant) together: the user must understand at once the location / proximity from one place to another to be able to plan a realistic day at leisure. It's also important to see where hotels are situated in relation to restaurants and tourist attractions. So I don't want to show for example only the hotels, but all markers together. Only like this the customer gets an instant idea of distances instead of having to select and deselect categories over and over again.  
 
 I disabled Map Type Control. In my opinion this isn't really a useful control, especially in a city, and since this control is quite big it intervenes with the User Experience, especially on smaller devices. 
 
@@ -147,8 +143,7 @@ The only difference between mobile screen and larger screens is that the differe
 **How's this offering different from competitors and substitutes?**<br>
 - Instead of general information and 'sales-language' from big Dutch companies this tool offers inside tips, shows where to find the places we introduce and gives the user the idea we go a step further than other companies in our presentation and service – and that we have the expertise to do this. 
 - This application itself shows a strive for professionalism and service towards the clients. No other local company that offers the same kind of customized journeys for the same audience (Dutch speaking clients) has anything like this. 
-
-## 
+ 
 ## Functionality and Features
 ### Existing features
 - **Destinations**<br> On the start screen the user sees a short introduction and destinations he can select. This allows him to select the destination of his choice. The page scrolls down and each destination has the following functionalities. 
@@ -230,7 +225,7 @@ Safari
 - Testing the outgoing links 
 All hotel and restaurant suggestions have links to their own websites. I tested them all to make sure all are directed correctly and opening in a new window.
 
-### <a name="validation"></a>Automated Testing
+### <a name="automated-testing"></a>Automated Testing
 **Validation services**<br>
 The following validation services were used to check the validity of my code.
 
@@ -238,11 +233,11 @@ The following validation services were used to check the validity of my code.
 - W3C CSS validation was used to validate CSS.
 - JSHint was used to validate JavaScript.
 
-**Note for Code Institute**<br>
-After finishing my first Milestone Project I complaint that we hadn't had a single lesson about testing our code, but that you expect us to be able to do this. The reply I received:<br>
+### <a name="note"></a>Note for Code Institute
+After finishing my first Milestone Project I made a complaint that we hadn't had a single lesson about testing our code, but that you expect us to be able to do this. The reply I received:<br>
 *I have passed your valuable feedback over to the learning Success Team. I have spoken to someone from the team and they agreed that more information about testing and deployment is due. This is being looked into and in the process of being improved.*
 
-I again complained upon starting this Milestone Project:<br> 
+I again made a complaint upon starting this Milestone Project:<br> 
 *So far we only got a quick introduction to Jasmine with only 1 specific example. I feel that in the Milestone Projects there's an emphasis on the importance of testing, that isn't reflected in the course and based on this 1 lesson I can't create automated testing for this project.*
  
  The reply I received:<br>
